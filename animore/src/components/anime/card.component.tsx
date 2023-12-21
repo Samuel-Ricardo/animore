@@ -14,3 +14,5 @@ interface Prop {
   anime: AnimeProp;
   index: number;
 }
+
+export const AnimeCard = () => <div></div>;
