@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  animore:
+    build: .
+    entrypoint: ["npm", "run", "dev"]
+    volumes:
+      - .:/home/node/app
+    env_file:
+      - .env.local
+    external_links:
+      - "host.docker.internal"
