@@ -32,8 +32,10 @@ export const AnimeCard = ({ anime }: Prop) => (
         <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
           {anime.name}
         </h2>
-        <div className>
-          <p></p>
+        <div className="py-1 px-2 bg-[#161921] rounded-sm">
+          <p className="text-white text-sm font-bold capitalize">
+            {anime.kind}
+          </p>
         </div>
       </div>
       <div>
