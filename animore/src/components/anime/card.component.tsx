@@ -18,25 +18,32 @@ interface Prop {
 }
 
 export const AnimeCard = ({ anime }: Prop) => (
-  <div>
-    <div>
-      <Image />
+  <div className="max-w-sm rounded relative w-full">
+    <div className="relative w-full h-[37vh]">
+      <Image
+        src={anime.image.original}
+        alt={anime.name}
+        fill
+        className="rounded-xl"
+      />
+    </div>
+    <div className="py-4 flex flex-col gap-3">
+      <div className="flex justify-between items-center gap-1">
+        <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
+          {anime.name}
+        </h2>
+        <div className>
+          <p></p>
+        </div>
+      </div>
       <div>
         <div>
-          <h2></h2>
-          <div>
-            <p></p>
-          </div>
+          <Image />
+          <p></p>
         </div>
         <div>
-          <div>
-            <Image />
-            <p></p>
-          </div>
-          <div>
-            <Image />
-            <p></p>
-          </div>
+          <Image />
+          <p></p>
         </div>
       </div>
     </div>
