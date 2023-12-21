@@ -59,7 +59,7 @@ export const AnimeCard = ({ anime }: Prop) => (
             height={18}
             className="object-contain"
           />
-          <p></p>
+          <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
         </div>
       </div>
     </div>
