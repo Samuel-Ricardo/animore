@@ -38,13 +38,27 @@ export const AnimeCard = ({ anime }: Prop) => (
           </p>
         </div>
       </div>
-      <div>
-        <div>
-          <Image />
-          <p></p>
+      <div className="flex gap-4 items-center">
+        <div className="flex flex-row gap-2 items-center">
+          <Image
+            src="./episodes.svg"
+            alt="episodes"
+            width={20}
+            height={20}
+            className="object-contain"
+          />
+          <p className="text-base text-white font-bold">
+            {anime.episodes || anime.episodes_aired}
+          </p>
         </div>
-        <div>
-          <Image />
+        <div className="flex flex-row gap-2 items-center">
+          <Image
+            src="./star.svg"
+            alt="star"
+            width={18}
+            height={18}
+            className="object-contain"
+          />
           <p></p>
         </div>
       </div>
